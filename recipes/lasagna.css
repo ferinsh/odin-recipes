@@ -1,0 +1,32 @@
+.main-heading{
+    text-align: center;
+    background-color: cadetblue;
+    border: 30px;
+    padding: 20px;
+    margin: 30px;
+    font-size: 50px;
+    color: blanchedalmond;
+}
+
+.sub-heading{
+    text-align: center;
+    background-color: cadetblue;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 20px;
+    color: beige;
+    
+}
+
+.img-allign{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+
+}
+
+.ingredients-allign{
+    text-align: center;
+}
