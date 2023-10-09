@@ -91,5 +91,13 @@
     .recipes-list{
         flex: 1 21%;
         flex-direction: column;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .recipes-list{
+        flex: 1 46%;
+        flex-direction: column;
     }
 }
