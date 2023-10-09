@@ -78,10 +78,12 @@
 }
 
 .recipe-img{
+    display: flex;
     max-width: 100%;
 }
 
 .recipe-info {
+    display: flex;
     margin-top: auto;
     text-align: center;
 }
