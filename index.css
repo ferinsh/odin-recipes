@@ -90,5 +90,6 @@
 @media (max-width: 920px) {
     .recipes-list{
         flex: 1 21%;
+        flex-direction: column;
     }
 }
