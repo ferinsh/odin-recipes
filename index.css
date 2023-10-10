@@ -17,6 +17,10 @@ body {
     box-shadow: 0 0 8px rgba(0, 0, 0, .1);
 }
 
+.header-mobile{
+
+}
+
 .left, :right{
     display: flex;
     align-items: center;
@@ -45,3 +49,23 @@ ul{
 
     list-style-type: none;
 }
+
+
+
+@media only screen and (max-device-width: 480px) {
+    .header-mobile {
+      display: flex;
+    }
+    .header {
+      display: none;
+    }
+  }
+
+@media only screen and (min-device-width: 481px) {
+    .header-mobile {
+      display: none;
+    }
+    .header {
+      display: flex;
+    }
+  }
