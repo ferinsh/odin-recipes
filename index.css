@@ -1,105 +1,50 @@
-.box-main-heading{
-    background-color:tomato;
-    margin: 10px;
-    border: 30px;
-    padding: 30px;
-    text-align: center;
-    color: beige;
-    font-size: 100px;
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+
+
+body {
+    margin: 0;
+    background: beige;
+    font-family: Besley, serif;
+}
+
+.header{
+    display:flex;
+    padding: 8px;
+    justify-content: space-between;
+
+    background: white;
+    border-bottom: 5px solid rosybrown;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+}
+
+.left, :right{
+    display: flex;
+    align-items: center;
+    gap: 16px
+}
+
+
+.logo {
+
+}
+
+a {
+    text-decoration: none;
+    color: rosybrown;
+    background: beige;
+    border: 3px solid rosybrown;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-style: italic;
-    border: 0 #27ae60;
-    border: 30px;
-    height: auto;
-    width: auto;
-
 }
 
-.images-center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0 #27ae60;
-    height: auto;
-    width: 250px;
-}
-
-.recipe-list-allign{
-    display: block;
-    text-align: center;
-
-}
-
-
-.main-heading-flex {
+ul{
     display: flex;
-    background: tomato;
-    margin: 10px;
-    border: 5px solid orange;
-    padding: 30px;
 
+    gap: 16px;
+    margin: 0;
+    padding: 0;
 
-}
-
-.main-heading-text{
-    text-align: center;
-    color: beige;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-
-.recipe{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background: tomato;
-    padding: 30px;
-    margin: 10px;
-    border: 5px solid orange;
-}
-
-.recipes-list{
-
-    display: flex;
-    flex-direction: column;
-    
-    background: tomato;
-    padding: 2%;
-    border: 10px;
-
-
-    text-align: center;
-
-    
-
-}
-
-.recipe-img{
-    display: flex;
-    max-width: 100%;
-}
-
-.recipe-info {
-    display: flex;
-    margin-top: auto;
-    text-align: center;
-}
-
-
-@media (max-width: 920px) {
-    .recipes-list{
-        flex: 1 21%;
-        flex-direction: column;
-
-    }
-}
-
-@media (max-width: 480px) {
-    .recipes-list{
-        flex: 1 46%;
-        flex-direction: column;
-    }
+    list-style-type: none;
 }
