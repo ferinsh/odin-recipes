@@ -18,7 +18,15 @@ body {
 }
 
 .header-mobile{
+    display:flex;
+    flex-direction: column;
+    padding: 8px;
+    align-items: center;
+    
 
+    background: white;
+    border-bottom: 5px solid rosybrown;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
 }
 
 .left, :right{
