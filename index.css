@@ -11,23 +11,13 @@ body {
     display:flex;
     padding: 8px;
     justify-content: space-between;
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
     background: white;
-    border-bottom: 5px solid rosybrown;
+    border-bottom: 5px solid rgb(201, 186, 102);
     box-shadow: 0 0 8px rgba(0, 0, 0, .1);
 }
 
-.header-mobile{
-    display:flex;
-    flex-direction: column;
-    padding: 8px;
-    align-items: center;
-    
-
-    background: white;
-    border-bottom: 5px solid rosybrown;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
-}
 
 .left, :right{
     display: flex;
@@ -39,13 +29,13 @@ body {
 
 a {
     text-decoration: none;
-    color: rosybrown;
+    color: rgb(201, 186, 102);
     background: beige;
-    border: 3px solid rosybrown;
-    border-radius: 50px;
+    border: 3px solid rgb(201, 186, 102);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 10px;
     padding-right: 10px;
-    font-style: italic;
+    
 }
 
 ul{
@@ -60,20 +50,67 @@ ul{
 
 
 
-@media (max-width: 480px) {
-    .header-mobile {
-      display: flex;
-    }
-    .header {
-      display: none;
-    }
-  }
 
-@media (min-width: 481px) {
-    .header-mobile {
-      display: none;
-    }
-    .header {
-      display: flex;
-    }
-  }
+
+
+
+
+
+.main-box{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 100px;
+  border: 2px solid white;
+  
+  
+  background-color: antiquewhite ;
+
+}
+
+.main-box h1{
+  color: rgb(201, 186, 102);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+  padding-bottom: 50px;
+}
+
+.recipe-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 5px solid white;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  
+
+}
+
+.recipe-box h2{
+  color: rgb(201, 186, 102);
+  font-size: 35px;
+}
+
+
+.recipe-box .image-box{
+  display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+  color: red;
+  width: 50%;
+ 
+
+}
+
+.image-box img{
+  height: 400px;
+}
+
+
+.recipe-box p{
+  color: chocolate;
+}
