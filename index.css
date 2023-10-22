@@ -59,6 +59,7 @@ ul{
 .main-box{
   display: flex;
   align-items: center;
+  
   flex-direction: column;
   margin-left: 100px;
   margin-right: 100px;
@@ -113,4 +114,16 @@ ul{
 
 .recipe-box p{
   color: chocolate;
+}
+
+
+.buttn{
+  display: flex;
+  
+  justify-content: center;
+
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 100px;
 }
