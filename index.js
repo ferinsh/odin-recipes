@@ -27,16 +27,17 @@ function changeHeadingClr(){
     const mainBox_h1 = document.querySelector('#main-box-heading');
 
     mainBox_h1.setAttribute('style', 'color: red; font-size: 70px;');
+
 }
 
-tomato
+
 function changeBorderClr(){
     const mainBox = document.querySelector('.main-box');
     mainBox.setAttribute('style', 'border: 2px solid tomato;');
 }
 
 
-function Reset(){
+function reset(){
     const mainBox = document.querySelector('.main-box');
     const mainBox_h1 = document.querySelector('#main-box-heading');
 
@@ -50,6 +51,49 @@ const btnChangeHeadingClr = document.querySelector('#btn-heading-color');
 const btnChangeBorderClr = document.querySelector('#btn-border-color');
 const btnReset = document.querySelector('#btn-reset');
 
-btnChangeHeadingClr.addEventListener('click', changeHeadingClr);
-btnChangeBorderClr.addEventListener('click', changeBorderClr);
-btnReset.addEventListener('click', Reset);
+
+
+
+
+
+
+function process(){
+
+
+    
+    
+
+    btnChangeHeadingClr.addEventListener('click', function(e){
+        changeHeadingClr();
+        console.log(e.target);
+        e.target.style.background = 'beige';  
+        e.target.setAttribute('style', 'background: beige; border-radius: 40px; border: 2px solid gold; padding: 10px;');
+    })
+
+
+    btnChangeBorderClr.addEventListener('click', function(e){
+        changeBorderClr();
+        console.log(e.target);  
+        e.target.setAttribute('style', 'background: beige; border-radius: 40px; border: 2px solid gold; padding: 10px;');
+    })
+
+    
+
+    btnReset.addEventListener('click', function(e){
+        reset();
+        console.log(e.target);
+        e.target.style.background = 'beige';
+        e.target.setAttribute('style', 'background: beige; border-radius: 40px; border: 2px solid gold; padding: 10px;');
+
+    })
+
+}
+
+
+
+
+
+
+process();
+
+
